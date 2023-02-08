@@ -1,0 +1,170 @@
+
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/* COLOR PALLETE
+#C9A274   //bright wood     #decbb1   // background       #c7b295   //grid 
+#F6EFE3   // kinda white
+#6C3D15   // dark wood
+#6C5434   // unsaturated dark wood
+
+#DBA40E   //yellow    #92962c   //brifghter
+#4B5A20   //dark gren
+#787D12   //dark lime
+#7E6E13   //dark yellow
+
+
+#1c88ed   // blue background
+#68b0f2   // blue main
+
+#ed922f   // orange main
+#f2ab5e   // orange background
+#948b82   // orange gray
+
+*/
+
+
+
+/*
+*  now the the the else everything
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul.nav {
+  padding-left: 0px;
+  background-color: #92962c;
+  text-align: left;
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+ul.nav > li:hover {
+  background-color: #92962f;
+}
+ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  width: 100%;
+  background-color: #54524e;
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+mainTitle {
+	position:relative; 
+	left:80px; 
+	top:2px;
+	
+}
+
+
+.grid-container {
+  gap: 30px;
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  grid-auto-rows: minmax(50px, auto);
+  
+  padding: 15px;
+  background-color: #948b82;
+}
+
+.grid-image-item {
+  background-color: #ffffff;
+  
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+	align-items: center;
+    position: relative;
+  
+}
+
+.grid-image-item.bottom-text {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #454341;
+  padding: 50px;
+  text-align: left;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
